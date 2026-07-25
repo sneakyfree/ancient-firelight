@@ -13,6 +13,9 @@ from googleapiclient.http import MediaFileUpload
 from googleapiclient.errors import HttpError
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+# Guard against the one-token-one-channel trap: a token authorized for a
+# DIFFERENT channel produces confusing 403s on every call. Fail loudly instead.
+EXPECT_CHANNEL = "UCP2d1oA8gmFz5YyLuS_N3cg"   # Ancient Firelight
 STATE = os.path.join(HERE, "yt_uploaded.json")
 
 def creds():
@@ -24,6 +27,12 @@ def creds():
 def main():
     only = [a.upper() for a in sys.argv[1:]] or None
     yt = build("youtube", "v3", credentials=creds(), cache_discovery=False)
+    ch = yt.channels().list(part="snippet", mine=True).execute().get("items", [])
+    if not ch or ch[0]["id"] != EXPECT_CHANNEL:
+        got = ch[0]["snippet"]["title"] if ch else "(none)"
+        sys.exit("WRONG CHANNEL: token is for %r, expected Ancient Firelight.\n"
+                 "Re-run: yt_auth.py --full  and pick Ancient Firelight." % got)
+    print("channel: %s  ✅\n" % ch[0]["snippet"]["title"])
     state = json.load(open(STATE))
     ok = fail = 0
     for ep in sorted(state):

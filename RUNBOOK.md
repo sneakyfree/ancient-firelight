@@ -261,28 +261,34 @@ Metadata is `episodes.json`. Uploads are resumable and recorded in
 
 ---
 
-## 10. ⚠️ YOUTUBE API LIMITS PROVEN IN PRACTICE (2026-07-25)
+---
 
-The API project `kit-assistant-486203` has **not** completed Google's YouTube API
-compliance audit. Established by elimination, not guesswork:
+## 10. ⚠️ ONE TOKEN = ONE CHANNEL (the trap that cost an hour, 2026-07-25)
 
-| Call | Works? | Notes |
-|---|---|---|
-| `videos.insert` (upload) | ✅ **YES** | all six episodes uploaded unattended |
-| `channels.list` / `videos.list` | ✅ YES | |
-| `thumbnails.set` | ❌ 403 | "The thumbnail can't be set for the specified video" |
-| `videos.update` (visibility, metadata) | ❌ 403 forbidden | even a no-op private→private is refused |
+**A YouTube OAuth grant is bound to a single CHANNEL, not to the Google account.**
+The consent screen shows a channel picker when the account manages more than one.
+Whatever you click there is the only channel that token can ever touch —
+`channels.list(mine=true)` returns exactly one item.
 
-**It is NOT a scope problem and NOT a channel problem.** The channel's Feature
-eligibility shows *Intermediate features: Enabled* (custom thumbnails on), and the
-token holds the full `youtube` scope. Do not burn time re-authorizing.
+**How this bit us:** a re-authorization silently landed on *Black Box Declassified*
+instead of *Ancient Firelight*. Every subsequent call against Ancient Firelight's
+videos returned **403**, which looked exactly like an API-permission problem. It
+was misdiagnosed as an unaudited-project restriction. It was not. Re-authorizing
+onto the right channel made all six thumbnails and `videos.update` succeed
+immediately.
 
-**What this means day to day:**
-- Uploading new episodes stays fully automated. That is the expensive part.
-- **Thumbnails and the private→public flip must be done by hand in YouTube Studio**
-  (~20 seconds per video) until the audit is approved.
-- To remove the limit permanently, submit Google's free YouTube API Services
-  compliance audit for the project. Worth doing if more channels are coming.
+**Rules:**
+1. **Always run `yt_upload.py --list` (or check `channels.list`) right after any
+   re-auth** and confirm the channel name before doing anything else.
+2. Keep one token file per channel: `yt_token.json` (Ancient Firelight),
+   `yt_token_blackbox.json` (Black Box Declassified). All are gitignored.
+3. A 403 on `thumbnails.set` / `videos.update` when uploads work is *far* more
+   likely a wrong-channel token than an API audit issue. **Check the channel first.**
 
-`yt_thumbs.py` and `yt_publish.py` are written and correct — they will start
-working the moment the audit clears, with no code changes.
+**Confirmed working with the full `youtube` scope on the correct channel:**
+`videos.insert` ✅ · `thumbnails.set` ✅ · `videos.update` (visibility) ✅
+— so no compliance audit is required for this workflow.
+
+**Scope note:** `thumbnails.set` needed the broad `https://www.googleapis.com/auth/youtube`
+scope in practice; `youtube.upload` alone returned 403. Authorize with
+`yt_auth.py --full`.

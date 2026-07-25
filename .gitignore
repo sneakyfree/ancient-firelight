@@ -1,6 +1,8 @@
 # --- credentials: NEVER commit ---
-yt_token.json
-yt_client.json
+yt_token*
+yt_client*
+*token*.json
+*.backup.json
 *_token.json
 *.env
 .secrets/

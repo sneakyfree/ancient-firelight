@@ -1,4 +1,6 @@
 /* Ancient Firelight — thumbnail generator for EP02..EP06.
+   (EP01 keeps its original approved artwork, re-lit by the snippet in
+   assets/thumbs/README-relight.md rather than redrawn — a redraw came out worse.)
    Matches the approved EP01 language: near-black frame, ONE big signature object
    lit by ember, a short contrarian line at the bottom with the payload word in
    ember italic. Everything must read at 210px wide, so: few words, huge type,
@@ -7,22 +9,37 @@
    Loads engine.js first (palette, line(), flame(), fireGlow(), drawHand(), rnd…).
    Render with thumbs_render.py — one 1280x720 PNG per entry. */
 
-/* ---------- shared backdrop ---------- */
+/* ---------- shared backdrop ----------
+   EXPOSURE NOTE (learned the hard way 2026-07-25): the first pass measured a mean
+   luminance of 20-45 with 60-90% of the frame near-black. Strong YouTube thumbnails
+   sit around 90-140. A thumbnail has to COMPETE in a bright feed, not match the
+   video's dark grade. Everything below is deliberately lit far hotter than the
+   episodes themselves. Target: mean ~85-110, near-black under ~35%. */
 function plate(ctx, warm){
-  const g=ctx.createRadialGradient(W*0.5,H*0.46,40,W*0.5,H*0.46,W*0.72);
-  g.addColorStop(0,mix('#1A0E07','#3A1A0C',warm));
-  g.addColorStop(0.55,mix('#0E0907','#1C0F09',warm));
-  g.addColorStop(1,'#070505');
+  const g=ctx.createRadialGradient(W*0.5,H*0.44,30,W*0.5,H*0.44,W*0.80);
+  g.addColorStop(0,   mix('#6E3A18','#9A5520',warm));
+  g.addColorStop(0.40,mix('#4A2510','#78400F',warm));
+  g.addColorStop(0.75,mix('#2A1509','#3E1E0B',warm));
+  g.addColorStop(1,   '#1A0E08');
   ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
-  // faint painterly texture so it isn't a flat gradient
-  strokes(ctx,3.1,70,['#5A2A15','#3A1E12','#7A3A1C'],0.055,0,H,1.0);
+  strokes(ctx,3.1,80,['#B4602A','#8A4520','#C4762F'],0.10,0,H,1.0);
+}
+/* a hot pool of light directly behind the subject so it never sits on flat black */
+function keyLight(ctx,cx,cy,r,strength){
+  const g=ctx.createRadialGradient(cx,cy,10,cx,cy,r);
+  g.addColorStop(0,   rgba('#FFB25E',0.55*strength));
+  g.addColorStop(0.35,rgba('#E0602F',0.42*strength));
+  g.addColorStop(0.7, rgba('#8E2E12',0.22*strength));
+  g.addColorStop(1,   'rgba(26,14,8,0)');
+  ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
 }
 function bottomShade(ctx){
-  const g=ctx.createLinearGradient(0,H*0.56,0,H);
-  g.addColorStop(0,'rgba(6,4,4,0)');
-  g.addColorStop(0.55,'rgba(6,4,4,0.80)');
-  g.addColorStop(1,'rgba(6,4,4,0.95)');
-  ctx.fillStyle=g;ctx.fillRect(0,H*0.56,W,H*0.44);
+  // just enough to seat the type — NOT a crush to black
+  const g=ctx.createLinearGradient(0,H*0.62,0,H);
+  g.addColorStop(0,'rgba(12,7,5,0)');
+  g.addColorStop(0.5,'rgba(12,7,5,0.55)');
+  g.addColorStop(1,'rgba(12,7,5,0.78)');
+  ctx.fillStyle=g;ctx.fillRect(0,H*0.62,W,H*0.38);
 }
 /* the headline: plain cream + one ember-italic payload word, centred */
 function headline(ctx, plainL, emberW, plainR, y, size){
@@ -68,16 +85,16 @@ function thumbHand(ctx){
   // blown ochre field
   const R=250*s;
   const bg=ctx.createRadialGradient(cx,cy+46*s,20,cx,cy+46*s,R);
-  bg.addColorStop(0,rgba('#B4491F',0.82));
-  bg.addColorStop(0.55,rgba('#8E2E12',0.5));
-  bg.addColorStop(1,'rgba(120,40,18,0)');
+  bg.addColorStop(0,rgba('#FF8A3C',0.95));
+  bg.addColorStop(0.45,rgba('#D9552B',0.80));
+  bg.addColorStop(1,'rgba(140,50,20,0)');
   ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
   for(let i=0;i<1500;i++){
     const a0=rnd(i)*6.2832, rr=Math.sqrt(rnd(i*1.7))*R;
     const x=cx+Math.cos(a0)*rr*1.05, y=cy+46*s+Math.sin(a0)*rr*1.1;
     const fall=1-clamp(rr/R,0,1);
     ctx.globalAlpha=(0.16+0.6*fall)*(0.35+0.65*rnd(i*2.1));
-    ctx.fillStyle=(i%7===0)?'#C4541F':(i%3===0?'#A83C18':'#7E2810');
+    ctx.fillStyle=(i%7===0)?'#FFA85A':(i%3===0?'#E4602C':'#B4491F');
     ctx.beginPath();ctx.arc(x,y,rnd(i*3.1)*3.2*s+0.7,0,6.2832);ctx.fill();
   }
   ctx.globalAlpha=1;
@@ -89,7 +106,7 @@ function thumbHand(ctx){
   ox.fillStyle='#000';ox.strokeStyle='#000';
   handClaw(ox,cx,cy,s);
   ctx.clearRect(0,0,W,H);
-  plate(ctx,0.55);
+  plate(ctx,0.20);                       // dark behind the hand = the stencil reads
   ctx.drawImage(oc,0,0);
 }
 function handClaw(ctx,cx,cy,s){
@@ -119,7 +136,7 @@ function handClaw(ctx,cx,cy,s){
 function thumbCross(ctx){
   const cx=W*0.5, cy=H*0.30, w=760, h=430;
   const g=ctx.createLinearGradient(cx,cy-h/2,cx,cy+h/2);
-  g.addColorStop(0,'#7E5738');g.addColorStop(0.5,'#5A3B28');g.addColorStop(1,'#3A2618');
+  g.addColorStop(0,'#B4855A');g.addColorStop(0.5,'#8A5F3C');g.addColorStop(1,'#5E3E26');
   ctx.fillStyle=g;
   ctx.beginPath();ctx.ellipse(cx,cy,w/2,h/2,0.04,0,6.2832);ctx.fill();
   for(let i=0;i<90;i++){
@@ -201,8 +218,8 @@ function thumbSkulls(ctx){
   // the head itself
   ctx.save();
   path();
-  ctx.fillStyle='#0B0806';ctx.fill();
-  ctx.strokeStyle=rgba(GOLD,0.75);ctx.lineWidth=4;ctx.stroke();
+  ctx.fillStyle='#2A1B10';ctx.fill();
+  ctx.strokeStyle=rgba('#FFC070',0.95);ctx.lineWidth=6;ctx.stroke();
   // Neanderthal fragments burning inside the cranium
   ctx.clip();
   const segs=[[-30,-40,54],[6,-52,40],[-14,-22,66],[20,-30,34],[-34,-4,44],[10,-8,52],[-6,12,38]];
@@ -243,8 +260,25 @@ function thumbWeek(ctx){
     ctx.fillStyle=ASH;ctx.fillText(lab,cx,base+40);
     ctx.restore();
   };
-  bar(W*0.34,15,'#4A4038','#7A6A56','the myth',true);
+  bar(W*0.34,15,'#6E6052','#A8977E','the myth',true);
   bar(W*0.66,42,'#8E2E12','#E0602F','the arithmetic',false);
+}
+
+// EP01 — the campfire with eyes in the dark (the approved launch concept,
+// rebuilt here so all six live in one place and can be re-lit together)
+function thumbFire(ctx){
+  const fx=W*0.5, fy=H*0.46;
+  keyLight(ctx,fx,fy+40,560,1.15);
+  fireGlow(ctx,fx,fy+70,1.5,3.1);
+  // two figures seated either side, warm-rimmed so they read as shapes not holes
+  ctx.save();
+  for(const dx of [-118,118]){
+    ctx.fillStyle='#1C0F08';
+    ctx.beginPath();ctx.ellipse(fx+dx,fy+58,52,66,0,0,6.2832);ctx.fill();
+    ctx.beginPath();ctx.arc(fx+dx,fy-18,34,0,6.2832);ctx.fill();
+  }
+  ctx.restore();
+  flame(ctx,fx,fy+96,1.9,3.1);
 }
 
 /* ---------- the six thumbnails ---------- */
@@ -252,16 +286,20 @@ const THUMBS = {
   EP02: function(ctx){ thumbHand(ctx); bottomShade(ctx); eyes(ctx,4,11);
         headline(ctx,'The fingers are ','wrong','.',H*0.90,96); },
 
-  EP03: function(ctx){ plate(ctx,0.5); thumbCross(ctx); bottomShade(ctx); eyes(ctx,4,3);
+  EP03: function(ctx){ plate(ctx,0.68); keyLight(ctx,W*0.5,H*0.30,470,1.0);
+        thumbCross(ctx); bottomShade(ctx); eyes(ctx,4,3);
         headline(ctx,'It started with a ','doodle','.',H*0.90,92); },
 
-  EP04: function(ctx){ plate(ctx,0.45); thumbBone(ctx); bottomShade(ctx); eyes(ctx,5,7);
+  EP04: function(ctx){ plate(ctx,0.62); keyLight(ctx,W*0.5,H*0.30,520,1.0);
+        thumbBone(ctx); bottomShade(ctx); eyes(ctx,5,7);
         headline(ctx,'A flute? Or ','lunch','?',H*0.90,98); },
 
-  EP05: function(ctx){ plate(ctx,0.42); thumbSkulls(ctx); bottomShade(ctx); eyes(ctx,4,19);
+  EP05: function(ctx){ plate(ctx,0.60); keyLight(ctx,W*0.5,H*0.32,470,1.1);
+        thumbSkulls(ctx); bottomShade(ctx); eyes(ctx,4,19);
         headline(ctx,'You’re part ','Neanderthal','.',H*0.90,88); },
 
-  EP06: function(ctx){ plate(ctx,0.40); thumbWeek(ctx); bottomShade(ctx); eyes(ctx,4,29);
+  EP06: function(ctx){ plate(ctx,0.58); keyLight(ctx,W*0.5,H*0.42,520,0.95);
+        thumbWeek(ctx); bottomShade(ctx); eyes(ctx,4,29);
         headline(ctx,'Paradise worked ','42 hours','.',H*0.945,80); },
 };
 

@@ -1,0 +1,217 @@
+[    0.00 -     2.30] For a long time we told this story like a crime scene.
+[    3.12 -     4.86] The setup was simple and a little tragic.
+[    5.62 -     6.78] There were the Neanderthals.
+[    7.88 -    10.56] Stocky, big brain, cold, adapted the original Europeans
+[   10.56 -    12.10] who'd been getting on with things
+[   12.10 -    13.78] for a couple hundred thousand years.
+[   14.74 -    17.46] Then, out of Africa, came us.
+[   18.66 -    21.30] Taller, chattier, cleverer,
+[   21.76 -    23.70] or so we like to flatter ourselves.
+[   24.68 -    31.97] And within a few thousand years of our arrival,
+[   33.11 -    34.61] the Neanderthals were gone.
+[   35.81 -    36.63] Every last one.
+[   38.25 -    39.95] You can see why the story wrote itself.
+[   40.59 -    42.73] New humans arrive, old humans vanish,
+[   43.31 -    46.77] and the obvious verb sitting there in the middle is replaced.
+[   47.93 -    50.55] Or if you were feeling dramatic, wiped out.
+[   51.49 -    54.09] We cast ourselves as the clever newcomers
+[   54.93 -    57.41] and the Neanderthals as the doomed locals.
+[   58.21 -    59.97] And we told it that way in every textbook
+[   59.97 -    61.35] for the better part of a century.
+[   62.15 -    63.81] Here's the problem with that story.
+[   64.55 -    66.63] If the Neanderthals were simply wiped out,
+[   66.79 -    68.11] erased, replaced, or gone,
+[   68.39 -    69.77] then they should be strangers to us.
+[   70.03 -    72.65] Dead end branch, cousin we never actually met.
+[   73.41 -    75.01] So why is it that if your family tree
+[   75.01 -    76.41] runs anywhere outside of Africa,
+[   76.69 -    78.01] you are, at this very moment,
+[   78.47 -    80.03] carrying a piece of a Neanderthal
+[   80.03 -    81.49] around inside your own body?
+[   82.25 -    83.17] That's not a metaphor.
+[   84.19 -    84.83] That's your DNA.
+[   85.93 -    87.97] And it means the story we told was wrong
+[   87.97 -    89.39] in the most human way possible.
+[   90.47 -    92.15] Let's start with the thing in your cells
+[   92.15 -    93.27] because it's the part people
+[   93.27 -    95.93] can never quite believe the first time they hear it.
+[   97.07 -    99.41] In 2010, after a heroic effort
+[   99.41 -   101.83] to pull ancient DNA out of crumbling bones,
+[  102.63 -   104.37] a team led by Svante Pabo
+[  105.31 -   108.05] published the first draft of the Neanderthal genome
+[  108.05 -   110.83] and then compared it to living people.
+[  111.95 -   114.05] What they found rewrote everything.
+[  115.09 -   116.89] People whose ancestry lies outside
+[  116.89 -   119.37] sub-Saharan Africa carry, on average,
+[  120.33 -   123.71] somewhere around one to 2% Neanderthal DNA.
+[  125.39 -   127.75] Not descended from something Neanderthal-ish,
+[  129.47 -   131.31] actual Neanderthal gene sequences,
+[  132.09 -   134.13] still switched into the human genome,
+[  134.97 -   137.89] still doing things tens of thousands of years later.
+[  139.59 -   141.41] One to 2% doesn't sound like much,
+[  142.13 -   143.89] but hold on because here's the part
+[  143.89 -   145.35] that generally got me.
+[  145.91 -   147.87] That one to 2% isn't the same
+[  147.87 -   149.57] one to 2% in each person.
+[  150.31 -   151.97] You've got your stretch of Neanderthal.
+[  152.07 -   154.47] I've got mine, someone across the world has theirs,
+[  154.83 -   156.85] and they don't fully overlap.
+[  157.71 -   160.29] So if you could gather up all the little
+[  160.29 -   163.29] Neanderthal fragments scattered across everyone alive
+[  163.29 -   164.87] and lay them end to end,
+[  165.37 -   167.75] you could resemble more than a fifth
+[  167.75 -   169.75] of the entire Neanderthal genome.
+[  170.53 -   173.59] Over 20% of it out of living people.
+[  174.79 -   175.95] Think about what that means.
+[  176.99 -   179.45] The Neanderthals didn't vanish into the ground.
+[  180.37 -   183.19] A substantial chunk of them got up and walked into the future,
+[  183.49 -   185.29] distributed across billions of us,
+[  185.53 -   186.81] like a book torn into pages
+[  186.81 -   188.75] and tucked into a billion different pockets.
+[  189.75 -   192.29] Extinct is not quite the right word for that.
+[  193.33 -   194.53] We'll come back to it.
+[  195.61 -   197.83] Now for years, everyone knew the fact
+[  197.83 -   201.93] of the inner breeding, but was fuzzy on the shape of it.
+[  202.41 -   203.23] When did it happen?
+[  203.97 -   204.33] How?
+[  204.99 -   206.71] Was it one dramatic encounter,
+[  207.01 -   209.11] some prehistoric Romeo and Juliet moment
+[  209.11 -   211.85] that seeded the whole thing, or something slower?
+[  213.15 -   216.35] In December of 2024, two teams answered that question
+[  216.35 -   217.27] with real precision,
+[  217.85 -   219.57] and the answer is the reason this episode
+[  219.57 -   220.67] has the title it does.
+[  221.35 -   223.31] The main pulse of Neanderthal genes
+[  223.31 -   225.79] flowing into modern humans wasn't a single night
+[  226.29 -   229.37] or a single generation or even a single century.
+[  230.31 -   233.39] It was one long continuous period
+[  233.39 -   237.23] of mixing that began around 50,500 years ago
+[  237.23 -   243.27] and lasted, get this, about 7,000 years.
+[  244.61 -   246.43] The second team reading the DNA
+[  246.43 -   248.85] of some of the earliest modern humans ever sequenced
+[  248.85 -   250.49] landed right in the same window
+[  251.21 -   252.89] and shared mixing event dates
+[  252.89 -   256.59] to somewhere around 45 to 49,000 years ago.
+[  257.21 -   259.57] Two different approaches, two different sets of bones
+[  259.57 -   261.55] pointing at the same stretch of deep time.
+[  262.41 -   265.25] 7,000 years, sit with that number
+[  265.93 -   268.43] because it quietly detonates the old story.
+[  269.41 -   271.41] That's not an affair in the tabloid sense,
+[  271.89 -   273.01] a scandalous moment.
+[  274.25 -   276.05] That's an affair in the geological sense.
+[  277.07 -   280.17] 7,000 years is longer than all of recorded history.
+[  281.01 -   283.75] It's hundreds of generations of two kinds of human
+[  283.75 -   285.15] living in the same valleys,
+[  285.81 -   287.03] meeting at the same rivers,
+[  287.73 -   291.33] and regularly enough to leave a permanent mark on our species,
+[  292.15 -   294.29] falling in together and raising children.
+[  296.22 -   297.24] This wasn't a collision.
+[  298.42 -   300.52] It was a very long, slow blending.
+[  301.02 -   303.36] For 7,000 years on the same landscape,
+[  303.74 -   306.54] us and them were quietly repeatedly just us.
+[  307.80 -   308.70] And every now and then,
+[  308.88 -   310.70] the deep past hands you a single person
+[  311.24 -   313.36] who makes all of this stop being statistics
+[  314.14 -   317.56] in a cave in Romania called Pestera Cuase.
+[  318.24 -   321.04] They found the jaw of a modern human man
+[  321.04 -   323.58] who lived around 40,000 years ago.
+[  324.40 -   327.04] When they sequenced him, they got a shock.
+[  327.84 -   331.10] He was carrying six to 9% Neanderthal DNA,
+[  331.90 -   334.08] several times what anyone alive today has,
+[  334.52 -   337.10] and it came in long unbroken chunks,
+[  337.80 -   340.46] which is the genetic fingerprint of a recent mixing.
+[  341.16 -   341.76] How recent?
+[  342.48 -   345.30] This man had a Neanderthal ancestor
+[  345.30 -   347.44] just four to six generations back,
+[  347.98 -   350.02] a great, great grandparent give or take,
+[  350.64 -   352.60] which means somewhere in this man's family,
+[  353.22 -   354.62] close enough that his grandparents
+[  354.62 -   356.38] might have told stories about it,
+[  356.66 -   359.36] there was a Neanderthal, a specific individual,
+[  360.24 -   361.88] someone who fell in love or was taken
+[  361.88 -   364.06] or simply built a life across a line
+[  364.06 -   365.74] we'd always assumed was uncrossable.
+[  366.50 -   367.72] Here's the poignant footnote,
+[  368.34 -   370.90] and I include it because the honesty is the whole game.
+[  371.76 -   373.64] As far as we could tell, this particular man
+[  373.64 -   375.94] left no descendants among people alive today.
+[  376.64 -   380.64] His branch ended, so the Neanderthal DNA in you
+[  380.64 -   381.74] doesn't come from him.
+[  382.40 -   386.12] It comes from that long 7,000 year blending further back.
+[  387.22 -   388.80] But he's proof of concept.
+[  389.26 -   390.38] He's a face on the number.
+[  391.00 -   392.28] Somewhere out there was a family
+[  392.28 -   395.56] that was quite literally both kinds of human at once.
+[  396.92 -   398.18] There's one more twist,
+[  399.28 -   401.50] and it's the one that finally retired the last of
+[  401.50 -   404.64] the old conquerors and losers story for me.
+[  405.58 -   408.26] We've been talking as if the genes only flowed one direction.
+[  409.46 -   412.18] Neanderthal into us, a one day detonation
+[  412.18 -   413.80] from the doomed to the survivors,
+[  414.84 -   415.86] but it wasn't one way.
+[  416.86 -   418.72] When scientists sequenced the Neanderthal
+[  418.72 -   421.14] from a cave in the Altai Mountains of Siberia,
+[  421.76 -   425.42] they found modern human DNA sitting inside her genome.
+[  426.22 -   428.90] The signature of an even older encounter,
+[  429.68 -   431.52] maybe around 100,000 years ago,
+[  431.76 -   434.80] long before the famous 7,000 year affair in Europe,
+[  435.92 -   438.60] early members of our own lineage had way back
+[  438.60 -   440.70] contributed to theirs.
+[  442.64 -   444.72] So this wasn't a takeover with a winner and a loser.
+[  445.00 -   447.54] It was a genuine two way exchange
+[  447.54 -   450.80] running in both directions across an enormous span of time.
+[  451.56 -   454.64] DNA passing back and forth between two kinds of human
+[  454.64 -   456.64] whenever and wherever they happened to overlap,
+[  457.44 -   459.54] less an invasion and more a very long,
+[  459.66 -   462.32] very tangled family reunion that nobody planned
+[  462.32 -   463.32] and nobody wrote down.
+[  463.98 -   466.18] The gene flow going into the Neanderthals
+[  466.18 -   467.54] didn't survive to the present
+[  468.16 -   470.08] because Neanderthals didn't,
+[  470.12 -   472.60] but it happened and it tells you the relationship
+[  472.60 -   474.40] was never one of predator and prey,
+[  475.30 -   475.98] it was one of neighbors.
+[  477.68 -   480.90] So let's go back to that word, extinct.
+[  482.02 -   485.68] We say the Neanderthals went extinct around 40,000 years ago
+[  485.68 -   487.70] and in one narrow sense that's true.
+[  488.50 -   491.32] There's no separate Neanderthal population out there,
+[  491.92 -   493.30] no hidden valley of them,
+[  493.82 -   496.14] but extinct carries a whiff of total erasure,
+[  496.70 -   498.20] of a door closing forever.
+[  499.16 -   501.90] And that is not what the DNA shows.
+[  502.60 -   505.36] What the DNA shows is closer to absorption,
+[  505.88 -   509.24] two kinds of human met and over 7,000 years,
+[  509.64 -   512.66] the smaller population didn't so much as die out
+[  513.10 -   516.32] as get folded in, dissolved into the larger one
+[  518.59 -   520.65] like a tributary joining a river.
+[  521.35 -   523.45] The river keeps the name of the bigger stream,
+[  523.75 -   524.81] but the water is mixed.
+[  525.73 -   527.37] And this is the strongest identity hook
+[  527.37 -   528.89] in all of prehistory.
+[  529.41 -   531.37] So I'm going to say it as plainly as I can.
+[  531.93 -   533.45] This is not a story about them.
+[  534.09 -   536.69] If your ancestry runs outside Africa,
+[  537.31 -   539.37] the Neanderthals are not a separate species
+[  539.37 -   541.91] you're reading about in a book, they're your family.
+[  542.89 -   545.11] A great, great something grandparent
+[  545.69 -   548.49] contributing a percent or two of the instructions
+[  548.49 -   550.19] that built the body you're sitting in,
+[  550.61 -   552.89] the heavy brow, the cold country lungs,
+[  553.65 -   554.97] bits of your immune system,
+[  555.25 -   556.63] quirks of your skin and your sleep.
+[  557.27 -   559.53] Some of that is inheritance from a kind of human
+[  559.53 -   561.15] the textbooks call the dead end.
+[  561.79 -   564.53] The long dawn of the human mind it turns out
+[  564.53 -   567.37] was never lit by just one kind of human.
+[  567.91 -   570.87] For a good stretch of it, there were several of us.
+[  571.63 -   573.01] Cousins shared a cold continent
+[  573.71 -   574.75] where they overlapped,
+[  575.39 -   576.99] they did the most human thing imaginable.
+[  577.97 -   581.25] They didn't only fight and they didn't only flee.
+[  582.13 -   584.95] Sometimes for 7,000 years worth of sometimes
+[  586.05 -   589.09] they reached across the gap and made a family.
+[  590.71 -   592.07] You're what came of it.
+[  592.47 -   594.99] You are in a small and permanent way
+[  595.38 -   598.07] the surviving evidence of the longest love story
+[  598.07 -   599.09] we've ever found.
+[  599.83 -   600.55] Carry it well.

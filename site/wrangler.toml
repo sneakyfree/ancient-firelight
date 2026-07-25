@@ -1,0 +1,9 @@
+name = "ancient-firelight"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+account_id = "193b347aedeaafe35de0b5a534b2d9aa"
+workers_dev = true
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "ancient-firelight"

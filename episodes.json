@@ -1,0 +1,58 @@
+{
+  "_note": "Upload metadata for Ancient Firelight season 1. categoryId 27 = Education. Edit freely before uploading; the uploader reads this file.",
+  "defaults": {
+    "categoryId": "27",
+    "privacyStatus": "private",
+    "madeForKids": false,
+    "defaultLanguage": "en",
+    "tags": [
+      "ancient humans", "prehistory", "archaeology", "human origins",
+      "paleoanthropology", "stone age", "cave art", "anthropology",
+      "ancient history", "science", "documentary"
+    ]
+  },
+  "episodes": [
+    {
+      "id": "EP01",
+      "file": "exports/EP01_v3_chauvet.mp4",
+      "title": "What Did Ancient Humans Do at Night?",
+      "description": "The story says our ancestors huddled around fires to keep predators away. There is no study behind that claim — and what is actually there is far stranger.\n\nWe follow the famous \"fire kept the predators off\" fact back to its source and find it was never a finding at all: it was a hedge in one paper that hardened into a fact through citation drift. Meanwhile the Hadza run a fire only about two-thirds of nights, in lion country, and modern anti-lion practice doesn't use fire at all.\n\nWhat the evidence does show is better: across 20 nights, a group of 33 people were all asleep simultaneously for a total of 18 minutes. Someone was awake 99.8% of the time. Nobody organised it. Chronotype drifts with age, so the grandparents are the night watch — and no one ever planned it.\n\nSOURCES\n• Packer C et al. 2011, PLoS ONE 6(7):e22285 — lion attacks and moonlight\n• Samson DR et al. 2017, Proc R Soc B 284:20170967 — Hadza sentinel hypothesis\n• Samson DR et al. 2017, Am J Phys Anthropol — Hadza sleep and fire use\n• Eklund A et al. 2017, Sci Rep 7:2097 — anti-predator interventions\n• Wiessner PW 2014, PNAS 111(39):14027 — firelight talk\n\nAncient Firelight is about how we got the story of our own past wrong — and what the evidence actually says.",
+      "tags": ["ancient humans at night", "hadza", "sleep", "human evolution", "fire", "predators"]
+    },
+    {
+      "id": "EP02",
+      "file": "exports/EP02_The_Hand.mp4",
+      "title": "The Hand: The Oldest Art on Earth Is 67,800 Years Old",
+      "description": "Somebody put a hand flat against a cave wall, filled their mouth with red ochre, and blew. What was left behind is the oldest securely dated art we have ever found anywhere on the planet — and the fingertips are wrong.\n\nThis is the hand stencil from Muna Island, off Sulawesi, dated to at least 67,800 years ago. At least one fingertip was deliberately drawn to a point. The researchers' careful suspicion: a claw.\n\nIt also quietly demolishes a story we told for a century — that art began in Europe around 40,000 years ago, when something \"switched on\" in the modern human brain. That story turns out to be mostly about real estate: Europe is where archaeology was invented, where the universities and the funding were. Find art only where you dig, and you'll conclude art began where you dug.\n\nAnd we can't be sure which kind of human pressed it.\n\nSOURCES\n• Aubert M, Brumm A, Oktaviana AA, Joannes-Boyau R et al. 2026, Nature — Muna Island hand stencil\n• Aubert M et al. 2019/2024, Nature — Leang Bulu' Sipong 4 therianthropes, Sulawesi\n• Brumm A et al. 2021, Science Advances — Sulawesi warty pig, 45,500 years\n• John Hawks — on the cautious identification of early modern human remains\n\nAncient Firelight is about how we got the story of our own past wrong — and what the evidence actually says.",
+      "tags": ["hand stencil", "cave art", "oldest art", "sulawesi", "muna island", "chauvet", "therianthrope"]
+    },
+    {
+      "id": "EP03",
+      "file": "exports/EP03_Boredom.mp4",
+      "title": "Boredom Invented Art",
+      "description": "The oldest drawing we have is a crosshatch scratched into a piece of ochre about 73,000 years ago. It isn't beautiful. It isn't a map or a tally or a picture of an animal. Somebody made it for no reason at all — and that is exactly why it matters.\n\nThis episode is about boredom: the specific pain of having more mind than your afternoon requires. A lizard never feels it. A raven, a young chimp, a human toddler — and you on a delayed flight — all do. Boredom is a mind with spare capacity, running hot, hunting for novelty, and inventing a problem if it can't find one.\n\nOur ancestors had those afternoons. And the surplus went somewhere: an ochre workshop 100,000 years old, abalone shells used as paint pots, decorated ostrich-eggshell water canteens, shell beads at 142,000 years.\n\nEven the sceptical reading — \"they were just idly scratching\" — is the whole point. That's where it starts. Not with a masterpiece. With a fidget.\n\nSOURCES\n• Henshilwood CS et al. 2018, Nature 562:115 — the Blombos crosshatch\n• Henshilwood CS et al. 2011, Science 334:219 — the Blombos ochre workshop\n• Texier PJ et al. 2010, PNAS 107:6180 — Diepkloof engraved eggshell\n• Sehasseh EM et al. 2021, Science Advances 7:eabi8620 — Bizmoune shell beads\n\nAncient Firelight is about how we got the story of our own past wrong — and what the evidence actually says.",
+      "tags": ["blombos cave", "oldest drawing", "origins of art", "boredom", "ochre", "beads", "play"]
+    },
+    {
+      "id": "EP04",
+      "file": "exports/EP04_The_Flute.mp4",
+      "title": "The Neanderthal Flute That Might Just Be Lunch",
+      "description": "A fragment of a young cave bear's thigh bone, about the length of your hand, with two clean round holes in a neat row. It comes from a layer 50,000–60,000 years old, in a place where the only people around were Neanderthals.\n\nIf a human bored those holes to play a tune, it's the oldest musical instrument ever found — and a Neanderthal made it. If something else made them, it's lunch.\n\nEverything hangs on the holes. And a hole is one of the least talkative pieces of evidence there is. Holes happen. Teeth make holes. Time makes holes. This episode referees the fight honestly, and it ends unresolved — because it genuinely is.\n\nBut the episode isn't a shrug. While everyone argues over the bear bone, there's an instrument nobody argues about at all: a flute carved from the wing bone of a griffon vulture, five finger holes, a notched end, 42,000–43,000 years old. Music wasn't a novelty by then. It was an institution. And traditions have roots.\n\nSOURCES\n• Diedrich CG 2015, Royal Society Open Science 2:140022 — the hyena-puncture argument\n• Turk I et al. — the Divje Babe flute interpretation\n• Conard NJ, Malina M, Münzel SC 2009, Nature 460:737 — Hohle Fels vulture-bone flute\n\nAncient Firelight is about how we got the story of our own past wrong — and what the evidence actually says.",
+      "tags": ["divje babe", "neanderthal flute", "oldest instrument", "hohle fels", "archaeology", "neanderthals", "music origins"]
+    },
+    {
+      "id": "EP05",
+      "file": "exports/EP05_The_Affair.mp4",
+      "title": "The 7,000-Year Affair: You Are Carrying a Neanderthal",
+      "description": "For a century we told this like a crime scene: we arrived, they vanished, and the obvious verb in the middle was \"replaced.\" There's one problem with that story. If the Neanderthals were simply erased, they should be strangers to us.\n\nThey aren't. If your ancestry runs anywhere outside Africa you are carrying Neanderthal DNA right now — and here's the part that gets me: your 1–2% isn't the same 1–2% as mine. Gather the fragments scattered across everyone alive and you can reassemble over 20% of the entire Neanderthal genome out of living people.\n\nIn December 2024 two teams pinned down the shape of it. The main pulse of mixing wasn't one night or one generation. It was a single continuous window beginning around 50,500 years ago and lasting roughly 7,000 years — longer than all of recorded history.\n\nAnd it went both ways. Sequence the Altai Neanderthal and you find modern human DNA inside her genome, from an encounter maybe 100,000 years ago. Not predator and prey. Neighbours.\n\nSOURCES\n• Green RE et al. 2010, Science 328:710 — draft Neanderthal genome\n• Iasi LNM et al. 2024/2025 & Sümer AP et al. 2024/2025, Science / Nature — the ~7,000-year admixture window\n• Fu Q et al. 2015, Nature 524:216 — Oase 1, a Neanderthal great-great-grandparent\n• Kuhlwilm M et al. 2016, Nature 530:429 — modern human gene flow into Altai Neanderthals\n\nAncient Firelight is about how we got the story of our own past wrong — and what the evidence actually says.",
+      "tags": ["neanderthal dna", "human evolution", "interbreeding", "denisovan", "genetics", "oase", "svante paabo"]
+    },
+    {
+      "id": "EP06",
+      "file": "exports/EP06_Worst_Mistake.mp4",
+      "title": "The 15-Hour Workweek Paradise Never Existed",
+      "description": "You've heard it: before farming, our ancestors worked about 15 hours a week and spent the rest of the day lounging by the fire. Then we invented agriculture, chained ourselves to fields, and lost paradise — \"the worst mistake in the history of the human race.\"\n\nThe 15-hour number is real. It comes from real anthropology. And once you look at what it actually measured, it's almost completely a mirage.\n\nRichard Lee timed one specific thing among the Ju/'hoansi: the food quest. That number left out food processing (a staple was the mongongo nut, cracked by hand with a rock, thousands of times), cooking, butchery, making and mending every tool and shelter — and the vast unpaid ocean of childcare and housework. Lee went back and did the fuller accounting. The paradise number roughly tripled, to about 42 hours a week.\n\nSo why did the 15-hour version win? Because it consoles us. A story that tells you your unhappiness is real and not your fault will always outrun a boring table of numbers.\n\nThe real ancestors are better than the fairy tale, because they're real.\n\nSOURCES\n• Lee RB 1968/1979 — !Kung San time-allocation studies\n• Sahlins M 1972, Stone Age Economics — \"the original affluent society\"\n• Diamond J 1987, Discover — \"the worst mistake in the history of the human race\"\n• Wood JW et al. 1992 — the osteological paradox\n\nAncient Firelight is about how we got the story of our own past wrong — and what the evidence actually says.",
+      "tags": ["original affluent society", "hunter gatherer", "agriculture", "15 hour work week", "richard lee", "jared diamond", "anthropology"]
+    }
+  ]
+}

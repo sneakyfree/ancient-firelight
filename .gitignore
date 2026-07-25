@@ -1,0 +1,18 @@
+# --- credentials: NEVER commit ---
+yt_token.json
+yt_client.json
+*_token.json
+*.env
+.secrets/
+
+# --- large media: lives in R2 + YouTube, not git ---
+exports/*.mp4
+voice/*.wav
+animation/ghosts_glow/
+site/node_modules/
+yt-venv/
+yt_uploaded.json
+
+# --- scratch ---
+__pycache__/
+*.pyc

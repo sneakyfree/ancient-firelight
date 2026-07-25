@@ -35,10 +35,17 @@ if not (CLIENT_ID and CLIENT_SECRET):
 
 # upload = push the video; readonly = list channels so we can confirm we're on
 # the right one before sending anything.
+#
+# Run with --full to also request the broad `youtube` scope, which is what
+# unlocks: changing visibility (private -> public), setting the channel banner
+# and branding, and creating playlists. Custom thumbnails are documented to work
+# with youtube.upload alone, but --full rules the scope out as a suspect.
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube.readonly",
 ]
+if "--full" in sys.argv:
+    SCOPES.append("https://www.googleapis.com/auth/youtube")
 
 CLIENT_CONFIG = {
     "installed": {

@@ -11,7 +11,6 @@ voice/*.wav
 animation/ghosts_glow/
 site/node_modules/
 yt-venv/
-yt_uploaded.json
 
 # --- scratch ---
 __pycache__/

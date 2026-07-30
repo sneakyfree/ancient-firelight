@@ -292,3 +292,31 @@ immediately.
 **Scope note:** `thumbnails.set` needed the broad `https://www.googleapis.com/auth/youtube`
 scope in practice; `youtube.upload` alone returned 403. Authorize with
 `yt_auth.py --full`.
+
+### Always verify thumbnails after setting them
+
+```bash
+./yt-venv/bin/python yt_verify_thumbs.py          # all six
+./yt-venv/bin/python yt_verify_thumbs.py EP05     # or specific episodes
+```
+
+`thumbnails.set` can report success while silently changing nothing — YouTube
+rate-limits (HTTP 429) rapid thumbnail churn, and the **cooldown runs to hours,
+not minutes**. On 2026-07-25 four of six landed, two did not, and the failure was
+invisible at the call site; they sat wrong for days. `yt_verify_thumbs.py` pulls
+each live image back off the CDN and measures it against the local
+`_launch.png` — it asserts the channel identity first, exits non-zero on a
+mismatch, and warns separately when art is merely under-exposed. Treat it as a
+required step, not a nicety. Full rationale: `assets/thumbs/README-relight.md`.
+
+**Status 2026-07-30:** all six verified live and correctly exposed.
+
+### Launch
+
+All six are uploaded and **private**. To go live once Grant approves:
+
+```bash
+./yt-venv/bin/python yt_publish.py --set public          # or --schedule <ISO>
+```
+
+Test on ONE video before the rest.
